@@ -61,11 +61,6 @@ esac
 done
 
 
-if [ -z "$HOME_DIR" ]; then
-  echo "I don't know which user's persisting dir to bind mount. -p/--persistent-dir"
-  print_help
-fi
-
 if [ -z "$BASE_FS" ]; then
   echo "I don't know which dir to overlay on top of. -b/--base-fs"
   print_help
